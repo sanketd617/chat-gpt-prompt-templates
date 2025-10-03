@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Prompt Templates",
+    "version": "1.0.0",
+    "description": "Injects custom prompt templates before sending to ChatGPT",
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://chatgpt.com/c/*"
+            ],
+            "js": [
+                "js/content.js"
+            ]
+        }
+    ]
+}
